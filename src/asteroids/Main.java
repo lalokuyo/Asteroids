@@ -8,13 +8,13 @@ package asteroids;
  *
  * @author Eduardo
  */
-public class Asteroids {
+public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         
-        Game.main("asteroids.Game");
+        Gameplay.main("asteroids.Game");
     }
 }

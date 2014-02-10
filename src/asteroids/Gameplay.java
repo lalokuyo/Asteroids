@@ -11,7 +11,7 @@ package asteroids;
 
 import processing.core.*;
 
-public class Game extends PApplet {
+public class Gameplay extends PApplet {
     
     public void setup(){
         
