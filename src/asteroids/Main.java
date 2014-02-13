@@ -15,6 +15,6 @@ public class Main {
      */
     public static void main(String[] args) {
         
-        Gameplay.main("asteroids.Game");
+        Gameplay.main("asteroids.Gameplay");
     }
 }
