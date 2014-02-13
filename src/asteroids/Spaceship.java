@@ -10,4 +10,7 @@ package asteroids;
  */
 public class Spaceship {
     
+    //Spaceship variables
+    
+    
 }

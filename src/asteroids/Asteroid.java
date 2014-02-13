@@ -10,4 +10,17 @@ package asteroids;
  */
 public class Asteroid {
     
+    //Asteroid variables
+    //int id;
+    double width;
+    double height;
+    
+    
+    public Asteroid(double width, double height){
+        this.width = width;
+        this.height = height;
+        
+    }
+    
+    
 }
