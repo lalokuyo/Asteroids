@@ -8,9 +8,20 @@ package asteroids;
  *
  * @author Eduardo
  */
-public class Spaceship {
+import processing.core.*;
+
+public class Spaceship{
     
-    //Spaceship variables
+  Spaceship(){
     
-    
+  }
+ 
+  public void move() {
+ 
+  }
+  
+  //Displays the spaceship in the middle of the screen
+  void display(PApplet pApplet) {
+     pApplet.rect(pApplet.width/2, pApplet.height/2, 10, 20);
+  }
 }
