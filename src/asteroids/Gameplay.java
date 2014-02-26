@@ -15,17 +15,19 @@ import javax.swing.*;
 public class Gameplay extends PApplet {
 
     //Game Variables
+    private PImage backgroundJPG;
     Spaceship ship;
     int windowWidth = 900;
-    int windowHeight = 700;
+    int windowHeight = 697;
     String op1;
 
     //SETUP SECTION
     public void setup() {
         size(windowWidth, windowHeight);
+        backgroundJPG = loadImage("space.jpg");
         fill(255, 204);
         noStroke();
-        ship = new Spaceship();
+        ship = new Spaceship(this);
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception e) {
@@ -40,7 +42,9 @@ public class Gameplay extends PApplet {
 
     //DRAW SECTION
     public void draw() {
-        background(0);
-        ship.display(this);
+        background(backgroundJPG);
+        ship.display();
+        ship.move();
+        ship.isMoving();
     }
 }
